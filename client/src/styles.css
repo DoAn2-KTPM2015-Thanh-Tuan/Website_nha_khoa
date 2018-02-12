@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: "Open Sans";
+    src:url("font/opensans/OpenSans-Regular.ttf");
+}
+@font-face{
+    font-family: "Open Sans Bold";
+    src:url("font/opensans/OpenSans-Bold.ttf");
+}
+@font-face{
+    font-family: "Roboto Condensed Regular";
+    src: url("font/roboto-condensed/RobotoCondensed-Regular.ttf");
+}
+body{
+    color: #333;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans", Arial, Tahoma, sans-serif;
+}
+/* custom slider  */
+#slider ul.slick-dots{
+    bottom: 20px!important;
+}
+#slider .slick-dots li button:before{
+    font-size: 16px;
+    /* color: #007bff; */
+}
+#slider .slick-next{
+    right: 50px;
+    z-index: 10;
+}
+#slider .slick-prev{
+    left: 50px;
+    z-index: 10;
+}
+#slider .slick-prev:before{
+    content: "〈";
+    font-size: 24px;
+    color: black;
+    font-size: 60px;
+    font-weight: bold;
+}
+#slider .slick-next:before{
+    content: '〉';
+    font-size: 24px;
+    color: black;
+    font-size: 60px; 
+    font-weight: bold;
+}
+/* end custom slider  */

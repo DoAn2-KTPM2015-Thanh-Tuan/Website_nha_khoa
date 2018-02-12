@@ -1,0 +1,68 @@
+#footer{
+    background: url('../../../assets/img/bg-footer.jpg');
+    color: #ffffff;
+    padding: 50px 0 20px;
+    font-size: 16px;
+    line-height: 26px;
+}
+#footer #footer-header{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+#footer #footer-header .title{
+    font-size: 24px;
+    font-family: "Roboto Condensed Regular", "Open Sans", Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#footer #footer-header .content-item .info{
+    display: flex;
+}
+#footer #footer-header .content-item .info .icon{
+    font-size: 16px;
+    margin-right: 10px; 
+}
+#footer #footer-header .content-item .info-social .icon{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    border: 1px solid #e59407;
+    line-height: 45px;
+    cursor: pointer;
+    transition: all .5s;
+}
+#footer #footer-header .content-item .info-social .icon:hover{
+    border-color: #6666;
+}
+#footer #footer-header .content-item .info-social .icon > a > i{
+    font-size: 30px;
+    vertical-align: middle;
+}
+#footer #footer-header .content-item .info-social .icon-facebook{
+    background: rgb(45, 45, 240);
+}
+#footer #footer-header .content-item .info-social .icon-facebook > a > i{
+   color: #ffffff; 
+}
+#footer #footer-header .content-item .info-social .icon-youtube{
+    background: #bd0103;
+}
+#footer #footer-header .content-item .info-social .icon-youtube > a > i{
+   color: #ffffff; 
+}
+#footer #footer-header .content-item .info-social .icon-pinterest{
+    background: #ffffff;
+}
+#footer #footer-header .content-item .info-social .icon-pinterest > a > i{
+   color: #bd0103; 
+}
+#footer #footer-header .content-item .info-social .icon-instagram{
+    background: #e41150;
+}
+#footer #footer-header .content-item .info-social .icon-instagram > a > i{
+   color: #ffffff; 
+}
