@@ -7,15 +7,18 @@
 }
 #footer #footer-header{
     border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 20px;
     margin-bottom: 20px;
+}
+#footer #footer-header > div{
+    margin-bottom: 15px;
 }
 #footer #footer-header .title{
     font-size: 24px;
     font-family: "Roboto Condensed Regular", "Open Sans", Arial, Helvetica, sans-serif;
     cursor: pointer;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 #footer #footer-header .content-item .info{
     display: flex;
@@ -34,6 +37,9 @@
     line-height: 45px;
     cursor: pointer;
     transition: all .5s;
+}
+#footer #footer-header .content-item .item{
+    margin-bottom: 10px;
 }
 #footer #footer-header .content-item .info-social .icon:hover{
     border-color: #6666;

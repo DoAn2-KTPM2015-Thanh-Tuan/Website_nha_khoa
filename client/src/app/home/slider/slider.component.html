@@ -1,9 +1,8 @@
-<section id="slider">
-  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig" (afterChange)="afterChange($event)">
-    <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-          <img src="{{ slide.img }}" alt="" width="100%">
+<section id="slider" class="wow bounceInDown">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="slideConfig">
+    <div ngxSlickItem *ngFor="let slider of sliders" class="slide">
+          <img src="{{ slider.link_slider }}" alt="" width="100%">
     </div>
   </ngx-slick>
 </section>
 
-  

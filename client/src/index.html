@@ -23,3 +23,50 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 <!-- end page facebook plugin -->
+
+<!-- custom wow.js -->
+<script>
+    var wow = new WOW(
+    {
+      boxClass:     'wow',      // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset:       0,          // distance to the element when triggering the animation (default is 0)
+      mobile:       true,       // trigger animations on mobile devices (default is true)
+      live:         true,       // act on asynchronously loaded content (default is true)
+      callback:     function(box) {
+        // the callback is fired every time an animation is started
+        // the argument that is passed in is the DOM node being animated
+      },
+      scrollContainer: null,    // optional scroll container selector, otherwise use window,
+      resetAnimation: true,     // reset animation on end (default is true)
+    }
+  );
+  wow.init();
+</script>
+<!-- end custom wow.js -->
+
+<!-- custom speed scrollbar -->
+<!-- <script type="text/javascript">
+  function wheel(event) {
+    var delta = 0;
+    if (event.wheelDelta) {(delta = event.wheelDelta / 120);}
+    else if (event.detail) {(delta = -event.detail / 3);}
+
+    handle(delta);
+    if (event.preventDefault) {(event.preventDefault());}
+    event.returnValue = false;
+  }
+
+  function handle(delta) {
+    var time = 800;
+    var distance = 300;
+
+    $('html, body').stop().animate({
+        scrollTop: $(window).scrollTop() - (distance * delta)
+    }, time );
+  }
+
+  if (window.addEventListener) {window.addEventListener('DOMMouseScroll', wheel, false);}
+  window.onmousewheel = document.onmousewheel = wheel;
+</script> -->
+<!-- end custom speed scrollbar -->

@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { SliderService } from '../service/slider.service';
 
 @Component({
   selector: 'app-slider',
   templateUrl: './slider.component.html',
   styleUrls: ['./slider.component.css']
 })
-export class SliderComponent{
-
+export class SliderComponent implements OnInit{
+  constructor(private sliderService: SliderService){}
   slides = [
     {img: "assets/img/slider1.jpg"},
     {img: "assets/img/slider1.jpg"},
@@ -14,24 +15,19 @@ export class SliderComponent{
     {img: "assets/img/slider1.jpg"}
   ];
   slideConfig = {
-    // autoplay: true,
+    autoplay: true,
     dots: true,
     arrows: true,
     slidesToScroll: 1,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 5000,
     speed: 1000,
   };
- 
-  addSlide() {
-    this.slides.push({img: "http://placehold.it/350x150/777777"})
+  public sliders;
+  ngOnInit() {
+      this.sliderService.getSlider()
+      .then(
+        sliders => this.sliders = sliders,
+        err => console.log(err)
+      )
   }
- 
-  removeSlide() {
-    this.slides.length = this.slides.length - 1;
-  }
- 
-  afterChange(e) {
-    console.log('afterChange');
-  }
-  
 }
